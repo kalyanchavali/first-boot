@@ -15,11 +15,11 @@ public class HelloWorldService {
 	public String helloWorld() {
 		System.out.println("Invoked Hello world service");
 		madLoop();
-		return "Hello World";
+		return "Hello World" + intList.toString();
 	}
 
 	private static void madLoop() {
-		for (int i = 0; i < Integer.MAX_VALUE; i++) {
+		for (int i = 0; i < 200000; i++) {
 			intList.add(i);
 		}
 	}
